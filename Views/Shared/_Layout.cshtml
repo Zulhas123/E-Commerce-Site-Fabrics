@@ -1,0 +1,2611 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="uzJNB1qdOFB5e9JO25uVERJOxg5zTuSH7waxL05s">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Your script that uses select2() -->
+    <script src="~/js/main-scripts.js"></script>
+
+    <link rel="stylesheet" href="~/css/responsive.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="uploads/website-images/favicon-2024-01-30-12-40-15-1767.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/silck/slick.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/silck/slick-theme.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/style.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/header.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/home.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/product.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/media.css">
+    <link rel="stylesheet" href="https://www.mapkathi.com/frontend/assets/css/categories.css">
+
+  
+
+
+
+    <!-- Google Tag Manager -->
+    <script>        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5TSDQLGQ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<!-- header Start  -->
+<header>
+    <nav class="navbar navbar_justify_content_sm" style="background: #0f134f !important">
+        <div class="container-fluid row justify-content-between align-items-center nav_section">
+            <div class="col-2 d-block d-lg-none p_sm_0">
+                <button class="navbar-toggler bg-light d-xl-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#middlenav" aria-controls="middlenav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 logo_section" style="">
+                <a href="https://www.mapkathi.com" class="navbar-brand" style="margin: 0px; padding: 0px;">
+                    <img src="https://www.mapkathi.com/uploads/website-images/logo-2024-01-30-07-17-25-7613.png" alt="logo">
+                </a>
+            </div>
+            <div class="col-3 d-block d-lg-none" style="padding-right: 0%;">
+                <a style="float: right;padding: 0px;" href="https://www.mapkathi.com/checkout" class="btn pmd-btn-fab pmd-ripple-effect fixed-cart-bottom12" type="button">
+                    <span style="color: white;position: absolute;top: 2%;right: 2%;">
+                        0
+                    </span>
+                    <i class="fas fa-shopping-cart" style="font-size: 20px;color: #ffffff;"></i>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 col-12 p_sm_0">
+                <div class="search-container search_four">
+                    <form class="searchArea my-0 my-lg-0" action="https://www.mapkathi.com/search-product">
+                        <div class="search_box m-auto">
+                            <input placeholder="Search entire store here ..." type="text" name="query">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="font-size: 18px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-5 d-none">
+                <div class="navbar navbar-expand-lg justify-content-lg-end justify-content-between">
+                    <a class="btn rounded-0 btn-light bg-white m-2 mx-lg-3 p-2" style="display: flex;
+    background: linear-gradient(to right, #3383d9, #040434) !important;
+    color: white;
+    border-radius: 6px !important;" href="#">
+                        <i class="fa-solid fa-phone pe-0"></i> <small>01889499215</small>
+                    </a>
+
+
+                    <a style="display: flex;color: white;" class="rounded-0 bg-white m-2 mx-lg-3 p-2" href="https://www.mapkathi.com/login-user">Login</a>
+                    <a style="display: flex;
+    background: linear-gradient(to right, #3383d9, #040434) !important;
+    color: white;
+    border-radius: 6px !important;" class="btn rounded-0 btn-light bg-white m-2 mx-lg-3 p-2" href="#">Offer</a>
+                    <a style="display: flex;
+    background: linear-gradient(to right, #3383d9, #040434) !important;
+    color: white;
+    border-radius: 6px !important;" class="btn rounded-0 btn-light bg-white m-2 mx-lg-3 p-2" href="#">Contact</a>
+                    <!--<a class="btn rounded-0 btn-light bg-white m-2 p-2" href="#">Menu</a>-->
+
+                    <a class="btn rounded-0 btn-light bg-white m-2 mx-lg-3 p-2" style="display: flex;
+    background: linear-gradient(to right, #3383d9, #040434) !important;
+    color: white;
+    border-radius: 6px !important;" href="https://www.mapkathi.com/cart">
+                        Cart  <span class="badge bg-secondary" style="margin-left: 5px;">0</span>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-md-none d-lg-block d-xlx-block">
+                <div class="navbar navbar-expand-lg justify-content-lg-end justify-content-between">
+                    <div class="">
+                        <div class="support-icon-flex" style="padding:0px 10px;">
+                            <div class="icon white"><i class="fa-solid fa-phone pe-0" style="color: #EF4A23;"></i></div>
+                            <div class="text white">
+                                <p>call us now</p>
+                                <h5>01889499215</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<a style="display: flex;color: white; border-radius: 6px !important;" class="" href="https://www.mapkathi.com/login-user">Login</a>-->
+                    <div class="offer" style="line-height: 15px;display: flex;padding: 0px 10px;">
+                        <div class="icn" style="margin-right: 10px;">
+                            <i style="color: #EF4A23;margin-top: 6px;" class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="txt">
+                            <a href="https://www.mapkathi.com/login-user" style="color: #ffffff;"> <span style="color: white;display:block;font-size: 15px;">Account</span> </a>
+                            <div class="display: flex;">
+                                <span style="color: #ffffff;font-size: 11px;">
+                                    <a href="https://www.mapkathi.com/login-user" style="color: #ffffff;">Login</a>
+                                </span>
+                                <span style="color: #ffffff;font-size: 11px;">Or</span>
+                                <span style="color: #ffffff;font-size: 11px;">
+                                    <a href="https://www.mapkathi.com/login-user" style="color: #ffffff;">Register</a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--<a style="color: white;border-radius: 6px !important;padding:0px 10px;font-size: 15px;" class="" href="#">Contact</a>-->
+                    <!--<a class="btn rounded-0 btn-light bg-white m-2 p-2" href="#">Menu</a>-->
+
+                    <a class="" style="display: flex; color: white;
+    border-radius: 6px !important;padding: 0px 10px;" href="https://www.mapkathi.com/checkout">
+
+                        <i class="fas fa-cart-arrow-down"></i>
+
+                        <span class="badge bg-secondary" style="margin-left: 5px;
+    position: absolute;
+    top: -3%;
+    right: -1%;
+    background: #EF4A23!important;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-xl navbar-light p-0" style="box-shadow: 0px 5px 18px #808080c4;background: #F85606;">
+        <div class="container-fluid bot_menu">
+            <div class="collapse navbar-collapse middlenav" id="middlenav">
+                <ul class="navbar-nav m-auto mt-2 mt-lg-0 w-100 flex-wrap">
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/womens-short-kurta" role="button" data-bs-toggle="" aria-expanded="false">
+                            Women&#039;s  Short Kurta
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/womens-kurties" role="button" data-bs-toggle="" aria-expanded="false">
+                            Women&#039;s Kurties
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/salwar-kameez" role="button" data-bs-toggle="" aria-expanded="false">
+                            Salwar Kameez
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/saree" role="button" data-bs-toggle="" aria-expanded="false">
+                            Saree
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/-couple-combo" role="button" data-bs-toggle="" aria-expanded="false">
+                            couple combo
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/men-panjabi" role="button" data-bs-toggle="" aria-expanded="false">
+                            Men Panjabi
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/available-exclusive-three-piece" role="button" data-bs-toggle="" aria-expanded="false">
+                            Available Exclusive  Three piece
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown" href="https://www.mapkathi.com/shop/customer-review" role="button" data-bs-toggle="" aria-expanded="false">
+                            Customer Review
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<a href="https://www.mapkathi.com/checkout"
+   class="btn pmd-btn-fab pmd-ripple-effect btn-primary fixed-cart-bottom1"
+   type="button">
+    <span style="color: white; position: absolute; top: 4px; right: 17px;">0</span>
+    <i class="fas fa-shopping-cart"></i>
+</a>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <div class="main-wrapper" style="margin-top: 25px;">
+        <!-- Banner Section Start  -->
+        <div class="w-100">
+            <div class="row w-100 ms-0" style="width: 96% !important;margin: 0 auto !important;">
+                <div class="col-lg-9 col-12 h-100" style="padding-left: 0px;">
+                    <div id="banner-slider" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#banner-slider" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.mapkathi.com/uploads/custom-images/slider-2024-01-31-11-09-54-9543.jpg" class="d-block w-100" alt="Slider Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#banner-slider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#banner-slider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 p-0" style="flex: 0 0 auto;width: 24%;margin-left: 1%;">
+                    <div class="banner_sidebar">
+
+                        <div class="col-12 left_side_img" style="box-shadow: 0px 0px 5px rgba(0, 113, 220, 0.15);">
+                            <a href="#"><img src="https://www.mapkathi.com/uploads/website-images/video_background-2024-01-31-11-10-34-3805.jpg" style="height: 395px;" alt="" class="img-fluid w-100"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="slider-bottom   mt-4 border-1 rounded-5 bg-white text-center ">
+                    <p class="">
+                        <marquee style="margin-top: 6px;font-size: 14px;" behavior="" direction="">
+                            If you encounter any issues while using our website, please reach out to our Customer Care team. We&#039;re here to help!
+
+                            Contact Us:
+
+                            Phone: +8801889499215
+
+                            Feel free to call us for support or any inquiries you may have. We&#039;re happy to assist!
+                        </marquee>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Banner Section End  -->
+        <!-- Categories Start -->
+
+        <section class="my-lg-5" style="margin-top: 0px !important;">
+            <div class="container-fluid p-0" style="">
+                <div class="text-center">
+                    <h2 style="margin:0px"><strong>featured category</strong></h2>
+                </div>
+                <div class="container-fluid p-3 py-3 bg-white">
+                    <div class="container-fluid p-1 bg-muted">
+                        <div class="row feature-cat px-3">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/-couple-combo">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/couple-combo-2024-01-29-02-39-31-6858.png" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">couple combo</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/womens-short-kurta">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/woman-short-kurta-2024-08-02-10-41-21-9739.jpg" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Women&#039;s  Short Kurta</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/men-panjabi">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/men-panjabi-2024-01-13-02-03-16-3176.jpg" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Men Panjabi</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/available-exclusive-three-piece">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/available-exclusive-designer-three-piece-with-embroidery-work-2024-07-12-08-22-20-5065.jpg" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Available Exclusive  Three piece</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/saree">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/saree-2024-01-13-02-04-17-2565.jpg" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Saree</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/womens-kurties">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/womens-kurties-2024-01-13-02-03-44-4630.png" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Women&#039;s Kurties</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-lg-feaCat col-md-2 col-sm-4  col-4 my-1 p-1">
+                                        <div class="category text-center bg-white p-4 rounded-3">
+                                            <a href="https://www.mapkathi.com/category/subcategory/salwar-kameez">
+                                                <img src="https://www.mapkathi.com/uploads/custom-images2/salwar-kameez-2024-08-02-10-36-56-6299.jpeg" alt="" class="img-fluid">
+                                                <p class="pt-3 text-dark font-14 bold">Salwar Kameez</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Categories End -->
+        <!-- Product Sliders Start  -->
+
+
+        <div class="bg-gradient container-fluid" style="background: linear-gradient(120deg, #2e4f84 -20%, #080522 100%) !important;">
+            <div class="col-12 product-header">
+                <div class="section_title text-light">
+                    <a href="https://www.mapkathi.com/shop/womens-short-kurta" style="color: #218A41;"> <h4 class="p-1 m-0 prodCatcus" style="text-align:center"><span style="width: auto;">Women&#039;s  Short Kurta</span></h4> </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="product-box">
+                <div class="owl-carousel slider_product">
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/578"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s01-2024-08-02-10-50-55-2136.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/578"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s01-2024-08-02-10-50-55-2136.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/578" class="font-14" style="font-size:14px"> Exclusive Designer short  Kurta  Wi...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">920 Tk</span>
+                                <span class="old_price">1050 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/578"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/578"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/579"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s02-2024-08-02-10-59-54-7365.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/579"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s02-2024-08-02-10-59-54-7365.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/579" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">920 Tk</span>
+                                <span class="old_price">1050 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/579"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/579"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/580"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s03-2024-08-02-11-05-02-4545.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/580"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s03-2024-08-02-11-05-02-4545.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/580" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1250 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/580"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/580"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/581"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s04-2024-08-02-11-12-27-7748.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/581"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s04-2024-08-02-11-12-27-7748.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/581" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">920 Tk</span>
+                                <span class="old_price">1050 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/581"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/581"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/582"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s05-2024-08-02-11-15-44-9601.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/582"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s05-2024-08-02-11-15-44-9601.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/582" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">950 Tk</span>
+                                <span class="old_price">1150 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/582"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/582"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/583"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s06-2024-08-02-11-23-28-8039.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/583"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s06-2024-08-02-11-23-28-8039.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/583" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1050 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/583"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/583"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/599"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s07-2024-09-11-02-35-44-6592.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/599"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s07-2024-09-11-02-35-44-6592.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/599" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">950 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/599"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/599"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/620"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s08-2024-12-21-02-13-28-7757.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/620"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s08-2024-12-21-02-13-28-7757.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/620" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1050 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/620"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/620"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/621"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s09-2024-12-21-02-16-21-8550.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/621"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s09-2024-12-21-02-16-21-8550.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/621" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1050 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/621"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/621"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/622"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s10-2024-12-21-02-19-45-1394.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/622"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-short-kurta-with-embroidery-work-s10-2024-12-21-02-19-45-1394.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/622" class="font-14" style="font-size:14px"> Exclusive Designer short Kurta With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1050 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/622"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/622"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient container-fluid" style="background: linear-gradient(120deg, #2e4f84 -20%, #080522 100%) !important;">
+            <div class="col-12 product-header">
+                <div class="section_title text-light">
+                    <a href="https://www.mapkathi.com/shop/womens-kurties" style="color: #218A41;"> <h4 class="p-1 m-0 prodCatcus" style="text-align:center"><span style="width: auto;">Women&#039;s Kurties</span></h4> </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="product-box">
+                <div class="owl-carousel slider_product">
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/577"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s-54-2024-08-02-12-59-18-8769.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/577"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s-54-2024-08-02-12-59-18-8769.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/577" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">950 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/577"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/577"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/525"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-kurti-s1-2024-01-27-06-48-33-6917.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/525"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-kurti-s1-2024-01-27-06-48-33-6917.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/525" class="font-14" style="font-size:14px"> Premium Aarong Cotton Kurti S1</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/525"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/525"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/522"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s31-2024-01-26-12-11-00-1889.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/522"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s31-2024-01-26-12-11-00-1889.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/522" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/522"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/522"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/521"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s30-2024-01-26-11-54-12-9078.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/521"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s30-2024-01-26-11-54-12-9078.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/521" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/521"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/521"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/520"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s29-2024-01-26-10-28-31-3943.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/520"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s29-2024-01-26-10-28-31-3943.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/520" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/520"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/520"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/519"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s28-2024-01-26-10-21-17-9187.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/519"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s28-2024-01-26-10-21-17-9187.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/519" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/519"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/519"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/518"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s27-2024-01-26-10-15-58-4467.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/518"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s27-2024-01-26-10-15-58-4467.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/518" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/518"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/518"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/517"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s26-2024-01-26-12-13-39-6688.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/517"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s26-2024-01-26-12-13-39-6688.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/517" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">999 Tk</span>
+                                <span class="old_price">1250 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/517"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/517"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/516"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s25-2024-01-26-12-08-56-6406.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/516"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s25-2024-01-26-12-08-56-6406.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/516" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/516"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/516"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/515"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s24-2024-01-26-12-02-59-7138.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/515"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s24-2024-01-26-12-02-59-7138.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/515" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/515"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/515"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/514"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s23-2024-01-25-11-52-58-5624.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/514"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s23-2024-01-25-11-52-58-5624.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/514" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/514"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/514"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/513"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s22-2024-01-25-11-47-18-6309.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/513"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-embroidery-s22-2024-01-25-11-47-18-6309.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/513" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With Embro...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">850 Tk</span>
+                                <span class="old_price">950 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/513"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/513"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient container-fluid" style="background: linear-gradient(120deg, #2e4f84 -20%, #080522 100%) !important;">
+            <div class="col-12 product-header">
+                <div class="section_title text-light">
+                    <a href="https://www.mapkathi.com/shop/salwar-kameez" style="color: #218A41;"> <h4 class="p-1 m-0 prodCatcus" style="text-align:center"><span style="width: auto;">Salwar Kameez</span></h4> </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="product-box">
+                <div class="owl-carousel slider_product">
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/631"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s52-2025-02-27-06-43-29-9497.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/631"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s52-2025-02-27-06-43-29-9497.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/631" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/631"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/631"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/562"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s17-2024-05-18-11-18-17-2799.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/562"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s17-2024-05-18-11-18-17-2799.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/562" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/562"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/562"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/561"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s16-2024-05-14-11-00-30-5801.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/561"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s16-2024-05-14-11-00-30-5801.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/561" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/561"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/561"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/560"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s15-2024-05-14-10-56-24-6431.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/560"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s15-2024-05-14-10-56-24-6431.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/560" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/560"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/560"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/539"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-poket-embroidery-s5-2024-02-08-07-05-35-2215.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/539"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-poket-embroidery-s5-2024-02-08-07-05-35-2215.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/539" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With poket...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1550 Tk</span>
+                                <span class="old_price">2050 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/539"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/539"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/540"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-poket-embroidery-s6-2024-02-08-07-10-07-5078.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/540"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-kurti-with-poket-embroidery-s6-2024-02-08-07-10-07-5078.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/540" class="font-14" style="font-size:14px"> Exclusive Designer Kurti With poket...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1550 Tk</span>
+                                <span class="old_price">1750 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/540"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/540"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/545"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s8-2024-02-17-07-37-44-2714.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/545"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s8-2024-02-17-07-37-44-2714.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/545" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/545"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/545"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/547"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s9-2024-02-23-05-13-52-2155.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/547"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s9-2024-02-23-05-13-52-2155.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/547" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/547"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/547"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/549"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s10-2024-03-11-01-07-33-2602.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/549"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s10-2024-03-11-01-07-33-2602.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/549" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/549"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/549"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/550"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s11-2024-03-11-01-13-23-1932.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/550"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s11-2024-03-11-01-13-23-1932.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/550" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/550"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/550"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/551"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s12-2024-03-11-01-21-14-8600.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/551"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s12-2024-03-11-01-21-14-8600.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/551" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/551"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/551"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/552"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s13-2024-03-11-01-26-34-1644.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/552"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-designer-three-piece-with-embroidery-work-s13-2024-03-11-01-26-34-1644.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/552" class="font-14" style="font-size:14px"> Exclusive Designer Three piece With...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/552"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/552"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient container-fluid" style="background: linear-gradient(120deg, #2e4f84 -20%, #080522 100%) !important;">
+            <div class="col-12 product-header">
+                <div class="section_title text-light">
+                    <a href="https://www.mapkathi.com/shop/-couple-combo" style="color: #218A41;"> <h4 class="p-1 m-0 prodCatcus" style="text-align:center"><span style="width: auto;">couple combo</span></h4> </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="product-box">
+                <div class="owl-carousel slider_product">
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/476"><img src="https://www.mapkathi.com/uploads/custom-images2/-2024-01-24-11-03-08-5875.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/476"><img src="https://www.mapkathi.com/uploads/custom-images2/-2024-01-24-11-03-08-5875.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/476" class="font-14" style="font-size:14px"> 𝐍𝐞𝐰 𝐀𝐫𝐫𝐢𝐯𝐚𝐥 𝐂𝐨𝐮𝐩𝐥𝐞 𝐒𝐞𝐭𝐬</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1999 Tk</span>
+                                <span class="old_price">2550 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/476"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/476"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/484"><img src="https://www.mapkathi.com/uploads/custom-images2/couple-combo-2024-01-25-07-44-12-7984.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/484"><img src="https://www.mapkathi.com/uploads/custom-images2/couple-combo-2024-01-25-07-44-12-7984.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/484" class="font-14" style="font-size:14px"> couple combo</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1699 Tk</span>
+                                <span class="old_price">1999 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/484"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/484"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/485"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-slab-cotton-couple-dress-2024-01-25-08-04-33-5644.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/485"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-slab-cotton-couple-dress-2024-01-25-08-04-33-5644.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/485" class="font-14" style="font-size:14px"> Premium Slab Cotton Couple Dress</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1699 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/485"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/485"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/486"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-couple-dress-2024-01-25-12-31-07-9995.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/486"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-couple-dress-2024-01-25-12-31-07-9995.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/486" class="font-14" style="font-size:14px"> Premium Aarong Cotton Couple Dress</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1899 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/486"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/486"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/487"><img src="https://www.mapkathi.com/uploads/custom-images2/kashmiri-cotton-kurtipanjabi-2024-01-25-01-32-21-4180.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/487"><img src="https://www.mapkathi.com/uploads/custom-images2/kashmiri-cotton-kurtipanjabi-2024-01-25-01-32-21-4180.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/487" class="font-14" style="font-size:14px"> Kashmiri Cotton Kurti/Panjabi</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1600 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/487"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/487"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/488"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-kashmiri-cotton-kurtupanjabi-2024-01-25-02-08-11-1035.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/488"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-kashmiri-cotton-kurtupanjabi-2024-01-25-02-08-11-1035.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/488" class="font-14" style="font-size:14px"> Exclusive Kashmiri Cotton  kurtu/pa...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1899 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/488"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/488"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/489"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-couple-kurti-panjabi-2024-01-25-02-19-30-7159.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/489"><img src="https://www.mapkathi.com/uploads/custom-images2/premium-aarong-cotton-couple-kurti-panjabi-2024-01-25-02-19-30-7159.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/489" class="font-14" style="font-size:14px"> Premium Aarong Cotton Couple kurti/...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1699 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/489"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/489"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/490"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-kashmiri-cotton-panjabi-kurti-2024-01-25-02-27-05-5989.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/490"><img src="https://www.mapkathi.com/uploads/custom-images2/exclusive-kashmiri-cotton-panjabi-kurti-2024-01-25-02-27-05-5989.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/490" class="font-14" style="font-size:14px"> Exclusive Kashmiri Cotton Panjabi/...</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1899 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+
+                                <a href="https://www.mapkathi.com/product/490"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi ">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/490"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient container-fluid" style="background: linear-gradient(120deg, #2e4f84 -20%, #080522 100%) !important;">
+            <div class="col-12 product-header">
+                <div class="section_title text-light">
+                    <a href="https://www.mapkathi.com/shop/saree" style="color: #218A41;"> <h4 class="p-1 m-0 prodCatcus" style="text-align:center"><span style="width: auto;">Saree</span></h4> </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="product-box">
+                <div class="owl-carousel slider_product">
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/524"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s6-2024-01-27-01-14-15-4468.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/524"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s6-2024-01-27-01-14-15-4468.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/524" class="font-14" style="font-size:14px"> Women&#039;s Saree S6</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1899 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/524"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/524"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/533"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s1-2024-01-30-12-21-12-8704.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/533"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s1-2024-01-30-12-21-12-8704.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/533" class="font-14" style="font-size:14px"> Women&#039;s Saree S1</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/533"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/533"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/534"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s7-2024-01-30-12-50-49-8672.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/534"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s7-2024-01-30-12-50-49-8672.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/534" class="font-14" style="font-size:14px"> Women&#039;s Saree S7</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/534"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/534"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/535"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s8-2024-01-30-01-11-16-7163.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/535"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s8-2024-01-30-01-11-16-7163.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/535" class="font-14" style="font-size:14px"> Women&#039;s Saree S8</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/535"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/535"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/536"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s9-2024-01-30-01-13-44-1431.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/536"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s9-2024-01-30-01-13-44-1431.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/536" class="font-14" style="font-size:14px"> Women&#039;s Saree S9</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/536"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/536"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/537"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s10-2024-01-30-01-15-39-3347.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/537"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s10-2024-01-30-01-15-39-3347.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/537" class="font-14" style="font-size:14px"> Women&#039;s Saree S10</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/537"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/537"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" style="">
+                        <div class="product_thumb bg-white prd_img" style="">
+                            <a class="primary_img " href="https://www.mapkathi.com/product/538"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s-11-2024-01-30-01-18-42-3217.jpg" class="primcusImg" alt=""></a>
+                            <a class="secondary_img " href="https://www.mapkathi.com/product/538"><img src="https://www.mapkathi.com/uploads/custom-images2/womens-saree-s-11-2024-01-30-01-18-42-3217.jpg" class="seccusImg" alt=""></a>
+
+                            <div class="label_product" style="width: 102px;">
+                                <span class="label_sale" style="padding-top: 2px;">মেগা অফার</span>
+                            </div>
+                        </div>
+                        <div class="product_content " style="border-top:3px solid #EDEDEF; margin-top: 10% ">
+                            <h4 class="ps-1" style="height: 35px;">
+                                <a href="https://www.mapkathi.com/product/538" class="font-14" style="font-size:14px"> Women&#039;s Saree S 11</a>
+                            </h4>
+                            <div class="subText" data-reactid=".1n7kkwy0qp6.b.2.0.0.0.0.2.5.1.0:$14822_Grocery.0.2.3">
+                            </div>
+                            <div class="price_box ps-1 justify-content-center prd_prc_bx" style="">
+                                <span class="current_price">1750 Tk</span>
+                                <span class="old_price">2000 Tk</span>
+                            </div>
+                            <div class="rounded-0 bg-muted p-2 d-flex justify-content-between">
+                                <a href="https://www.mapkathi.com/checkout/538"
+                                   style="color: white; font-size: 16px;background: #0f134f;border: solid;width: 100%;padding-top: 4%;"
+                                   class="btn btn-sm btn-warning semi buy-now"
+                                   data-url="https://www.mapkathi.com/cart">
+                                    <i class="fas fa-shopping-cart"></i> &ensp; অর্ডার করুন
+                                </a>
+
+
+                                <!--<a href="https://www.mapkathi.com/checkout/538"-->
+                                <!--   style="background: red;color: white; font-size: 13px;border: solid;"-->
+                                <!--   class="btn btn-sm btn-warning semi buy-now"-->
+                                <!--   data-url="https://www.mapkathi.com/cart">-->
+                                <!-- অর্ডার করুন-->
+                                <!--</a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Product Sliders Start  -->
+
+
+
+        <section class="brands mt-lg-5 mt-3 mb-5">
+            <div class="container" style="max-width: 1315px !important">
+                <div class="title-curve-box">
+                    <div class="title-curve">
+                        <h4 class="title text-light bold">Top Brands</h4>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <div class="brand-slider">
+                        <div class="single_brand ">
+                            <a href="https://www.mapkathi.com/brand-product/yellow"><img src="uploads/custom-images/yellow-2024-01-18-12-29-38-8904.png" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="single_brand ">
+                            <a href="https://www.mapkathi.com/brand-product/easy"><img src="uploads/custom-images/easy-2024-01-18-12-29-47-1746.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="single_brand ">
+                            <a href="https://www.mapkathi.com/brand-product/lereve"><img src="uploads/custom-images/lereve-2024-01-18-12-30-01-6812.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="single_brand ">
+                            <a href="https://www.mapkathi.com/brand-product/twelve"><img src="uploads/custom-images/twelve-2024-01-18-12-30-12-3141.png" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="single_brand ">
+                            <a href="https://www.mapkathi.com/brand-product/aarong"><img src="uploads/custom-images/aarong-2024-01-18-12-30-25-6172.webp" alt="" class="img-fluid"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row pt-4 service-support-box" style="margin-left:3%; margin-right:3%">
+            <div class="col-lg-3 col-md-6 col-12 border-end mb-3">
+                <div class="support service-support-single d-flex align-items-center ps-4">
+                    <img class="pe-2 img-fluid" src="https://www.mapkathi.com/frontend/assets/image/truck.png" style="margin:0px" alt="">
+                    <!-- <p><span>Free Shipping &amp; Returns</span> <br>For all order over 5 items</p>p -->
+                    <div class="" style="margin: 5px;padding: 0px;">
+                        <h6 style="margin:0px"><strong>Free Shipping & Return</strong></h6>
+                        <p class="font-13 m-0">
+                            All Orders Overs 5 Items
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 border-end mb-3">
+                <div class="support service-support-single d-flex align-items-center ps-4">
+                    <img class="pe-2 img-fluid" src="https://www.mapkathi.com/frontend/assets/image/payment.png" style="margin:0px" alt="">
+                    <!-- <p><span>Free Shipping &amp; Returns</span> <br>For all order over 5 items</p>p -->
+                    <div class="" style="margin: 5px;padding: 0px;">
+                        <h6 style="margin:0px"><strong>Secure Payment</strong></h6>
+                        <p class="font-13 m-0">
+                            We ensure secure payment
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 border-end mb-3">
+                <div class="support service-support-single d-flex align-items-center ps-4">
+                    <img class="pe-2 img-fluid" src="https://www.mapkathi.com/frontend/assets/image/payment.png" style="margin:0px" alt="">
+                    <!-- <p><span>Free Shipping &amp; Returns</span> <br>For all order over 5 items</p>p -->
+                    <div class="" style="margin: 5px;padding: 0px;">
+                        <h6 style="margin:0px"><strong>Money Back Guarantee</strong></h6>
+                        <p class="font-13 m-0">
+                            Any back withing 15 days
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+                <div class="support service-support-single d-flex align-items-center ps-4">
+                    <img class="pe-2 img-fluid" src="https://www.mapkathi.com/frontend/assets/image/customer-service.png" style="margin:0px" alt="">
+                    <!-- <p><span>Free Shipping &amp; Returns</span> <br>For all order over 5 items</p>p -->
+                    <div class="" style="margin: 5px;padding: 0px;">
+                        <h6 style="margin:0px"><strong>Customer Support</strong></h6>
+                        <p class="font-13 m-0">
+                            Call or email us 24/7
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 free-content">
+                        <div>
+
+                            <p><p>.&nbsp;</p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer second_div" style="margin-right: 0px;border-right: 1px solid white;border-right: 1px solid white;">
+
+                    <h5 class="semi"><i class="fa fa-home" aria-hidden="true"></i>HEAD OFFICE</h5>
+
+                    <div class="row">
+                        <div class="col-md-4 col-5">
+                            <h6 style="display: flex;font-size: 13px;"><i class="fa fa-map-marker"></i> Address: </h6>
+                        </div>
+                        <div class="col-md-7 col-7">
+                            <h6 style="font-size: 13px;">Green Palace (8th Floor), House: 124, Road: 05, Mohammadpur, Dhaka-1207, Bangladesh</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-5">
+                            <h6 style="display: flex;font-size: 13px;"><i class="fa fa-phone" aria-hidden="true"></i> Hotline: </h6>
+                        </div>
+                        <div class="col-md-7 col-7">
+                            <h6 style="font-size: 13px;">01889499215</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-5">
+                            <h6 style="display: flex;font-size: 13px;"><i class="fa fa-envelope"></i> E-mail: </h6>
+                        </div>
+                        <div class="col-md-7 col-7">
+                            <h6 style="font-size: 13px;">mapkathi07@gmail.com</h6>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-2 col-md-6 footer first_div" style="margin-left: 0px;margin-right: 0px;border-right: 1px solid white;">
+                    <div class="d-flex footer-content" style="margin-bottom: 10px;">
+
+                        <h6 class="mb-0" style="margin-bottom: 0px !important;"><span>Pages</span></h6>
+                    </div>
+                    <div style="line-height:4px">
+                        <a href="https://www.mapkathi.com/pages/about-us" style="color:white"><p>About us</p></a>
+                        <a href="https://www.mapkathi.com/pages/privacy-policy" style="color:white"><p>Privacy Policy</p></a>
+                        <a href="https://www.mapkathi.com/pages/terms-and-condition" style="color:white"><p>Terms and Condition</p></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 footer footer-left third_div" style="border-right: 1px solid white;">
+                    <h5 class="semi">PAYMENT PARTNER</h5>
+                    <div class="pb-4">
+                        <div class="payment-partner d-flex flex-wrap pb-2">
+                            <a class="pe-2" href="#">
+                                <img src="https://www.mapkathi.com/uploads/website-images/Mega-menu-2023-10-29-01-31-25-6307.png" alt="" style="width:100%; height:auto">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <h5 class="semi">DELIVERY PARTNER</h5>
+                    <div class="partner d-flex flex-wrap">
+                        <a class="pe-3" href="#">
+                            <img src="https://www.mapkathi.com/uploads/website-images/Mega-menu-2023-10-29-01-29-24-9285.png" alt="" style="width:100%; height:auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer footer-left four_div">
+                    <h5 class="semi">LIVE CHAT</h5>
+
+                    <div class="pb-4">
+                        <div class="payment-partner d-flex flex-wrap pb-2">
+                            <a href="https://wa.me/01889499215" target="_blank" class="fixed-cart-bottom">
+                                <img src="https://www.mapkathi.com/frontend/images/download.png" style="height: 50px;">
+                                <!--<span>-->
+                                <!--    <i class="fa-brands fa-whatsapp"></i>-->
+                                <!--</span>-->
+                            </a>
+                        </div>
+                    </div>
+
+                    <h5 class="semi">FOLLOW US</h5>
+                    <div class="d-flex social-link ps-4 flex-wrap">
+                        <a href="https://www.facebook.com/mapkathi500"><i class="fa-brands fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mapkathi_/"><i class="fa-brands fab fa-instagram"></i></a>
+                        @* <a href="https://www.youtube.com/@mapkathi_"><i class="fa-brands fab fa-youtube"></i></a> *@
+                        <a href="https://wa.me/01889499215"><i class="fa-brands fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/mapkathi500"><i class="fa-brands fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background: #0c0f36;text-align: center;">
+        <div class="row end-footer footer-end last-footer-content-align">
+            <div class="container">
+                <p class="text-left __text-16px" style="margin-bottom: 0px;padding: 4px 0px;color: #ffffff;font-size: 13px;">© 2023. All Rights Reserved By mapkathi &amp; Developed By <a style="color: #ffffff;font-size: 13px" href="https://softitglobal.com/">SoftitGlobal.com</a> </p>
+            </div>
+        </div>
+        <!-- Grid row -->
+    </div>
+
+    <script src="https://www.mapkathi.com/frontend/assets/js/jquery.min.js"></script>
+    <script src="https://www.mapkathi.com/frontend/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://www.mapkathi.com/frontend/assets/silck/slick.min.js"></script>
+    <script src="https://www.mapkathi.com/frontend/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSDQLGQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
+
