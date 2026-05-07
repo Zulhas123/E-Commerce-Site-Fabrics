@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      Prevent MSBuild workload SDK resolver from failing in minimal SDK installations.
+      This repo doesn't require mobile/desktop workloads to build.
+    -->
+    <MSBuildEnableWorkloadResolver>false</MSBuildEnableWorkloadResolver>
+    <!-- Work around intermittent MSBuild task failures in constrained environments -->
+    <BuildInParallel>false</BuildInParallel>
+  </PropertyGroup>
+</Project>

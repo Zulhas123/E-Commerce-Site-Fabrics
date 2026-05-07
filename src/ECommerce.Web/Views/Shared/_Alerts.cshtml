@@ -1,0 +1,18 @@
+@{
+    string? message = null;
+    string style = "info";
+
+    if (TempData["Save"] is string save && !string.IsNullOrWhiteSpace(save)) { message = save; style = "success"; }
+    else if (TempData["Edit"] is string edit && !string.IsNullOrWhiteSpace(edit)) { message = edit; style = "success"; }
+    else if (TempData["Delete"] is string delete && !string.IsNullOrWhiteSpace(delete)) { message = delete; style = "warning"; }
+    else if (TempData["Error"] is string error && !string.IsNullOrWhiteSpace(error)) { message = error; style = "danger"; }
+}
+
+@if (!string.IsNullOrWhiteSpace(message))
+{
+    <div class="alert alert-@style alert-dismissible fade show" role="alert">
+        @message
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+

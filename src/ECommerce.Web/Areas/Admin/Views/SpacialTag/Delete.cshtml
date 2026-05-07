@@ -1,0 +1,30 @@
+@model E_Commerce_System.Models.SpacialTag
+@{
+    ViewData["Title"] = "Delete Special Tag";
+}
+
+<h1 class="h4 mb-3">Delete special tag</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form asp-action="Delete" method="post" class="row g-3">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="col-md-6">
+                <label class="form-label" asp-for="spacialTag"></label>
+                <input asp-for="spacialTag" class="form-control" readonly />
+                <span asp-validation-for="spacialTag" class="text-danger"></span>
+            </div>
+
+            <div class="col-12 d-flex gap-2">
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+

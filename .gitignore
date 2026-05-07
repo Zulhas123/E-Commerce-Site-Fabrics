@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+.vs/
+
+# Local tooling caches used by this workspace
+.dotnet_home/
+.nuget/
+.msbuild/
+

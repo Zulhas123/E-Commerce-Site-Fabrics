@@ -1,0 +1,56 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Minimal, consistent UI styling on top of Bootstrap */
+:root {
+  --app-bg: #f8fafc;
+  --app-text: #0f172a;
+  --app-muted: #64748b;
+  --app-border: #e2e8f0;
+}
+
+html { font-size: 16px; }
+body.app-body {
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.navbar-brand { letter-spacing: 0.2px; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+main.container {
+  min-height: calc(100vh - 160px);
+}
+
+.card {
+  border-color: var(--app-border);
+}
+
+.table thead th {
+  color: var(--app-muted);
+  font-weight: 600;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html { position: relative; min-height: 100%; }

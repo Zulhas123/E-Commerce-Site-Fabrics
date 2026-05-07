@@ -1,0 +1,8 @@
+@model string
+
+<div class="btn-group btn-group-sm" role="group" aria-label="User actions">
+    <a asp-action="Edit" class="btn btn-outline-primary" asp-route-id="@Model">Edit</a>
+    <a asp-action="Details" class="btn btn-outline-secondary" asp-route-id="@Model">Details</a>
+    <a asp-action="LockOut" class="btn btn-outline-danger" asp-route-id="@Model">Lock out</a>
+</div>
+
